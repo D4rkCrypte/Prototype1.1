@@ -2,17 +2,29 @@
 <html lang="fr">
 
 <head>
+  <!-- Meta tags for responsive design and character encoding -->
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>CyberGuard 4 All - Accueil</title>
+  
+  <!-- Google Fonts for typography -->
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Poppins:wght@400;700&display=swap"
     rel="stylesheet" />
+  
+  <!-- Custom stylesheet -->
   <link rel="stylesheet" href="assets/styles.css" />
+  
+  <!-- Remix Icons for social media and UI icons -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.7.0/fonts/remixicon.css" rel="stylesheet" />
 </head>
 
 <body>
+  <!-- Main site header with navigation -->
   <header>
+    <!-- Company logo with brand name -->
     <div class="logo"><span>Cyber</span>Guard 4 All</div>
+    
+    <!-- Mobile navigation toggle button -->
     <button class="nav-toggle" aria-label="Ouvrir le menu" aria-controls="primary-navigation" aria-expanded="false">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
         stroke-linejoin="round">
@@ -21,151 +33,221 @@
         <line x1="3" y1="18" x2="21" y2="18"></line>
       </svg>
     </button>
+    
+    <!-- Main navigation menu -->
     <nav id="primary-navigation" class="nav-menu">
       <a href="index.html">Accueil</a>
       <a href="about.html">À propos</a>
       <a href="formations.html">Formations</a>
+      <a href="contact.html">Programmes</a>
       <a href="blog.html">Blog</a>
-      <a href="contact.html">Contact</a>
-      <a href="#mission" class="only-home">Mission</a>
-      <a href="#programmes" class="only-home">Programmes</a>
+      <a href="#programmes" class="only-home">Contact</a>
       <a href="#newsletter" class="only-home">Newsletter</a>
       <a href="#" aria-disabled="true" class="disabled" title="Bientôt">Espace membre</a>
-      <button class="btn-join">Rejoindre la communauté</button>
     </nav>
+    
+    <!-- Call-to-action button -->
+    <button class="btn-join">Nous rejoindre</button>
   </header>
 
-  <section class="banner">
-    <img src="logo.png" alt="Logo de CyberGuard 4 All" class="logo-img" />
-    <div class="para">
-      <h3>Former et protéger les jeunes Africains à l’ère du numérique.</h3>
-      <br>
-      <p>Cybersécurité • E-learning • Impact social</p>
+  <!-- Hero banner section with main call-to-action -->
+  <section class="banner" aria-label="Hero">
+    <!-- Company logo with fade-in animation -->
+    <div class="banner-media animate-on-scroll fade-in">
+      <img src="logo.png" alt="Logo de CyberGuard 4 All" class="logo-img" />
+    </div>
+    
+    <!-- Main banner content with slide-right animation -->
+    <div class="banner-content animate-on-scroll slide-right">
+      <h1>
+        Former et protéger les jeunes Africains
+        <span>à l'ère du numérique</span>
+      </h1>
+      <p class="lead">Cybersécurité accessible • Parcours e‑learning • Impact social réel</p>
+      <div class="actions">
+        <a class="btn cta-primary" href="formations.html">Découvrir les formations</a>
+        <a class="btn ghost cta-secondary" href="#newsletter">S'abonner</a>
+      </div>
     </div>
   </section>
-  <div class="subhero" role="note" aria-label="Initiatives">
+  
+  <!-- Sub-hero section with additional context -->
+  <div class="subhero animate-on-scroll fade-in" role="note" aria-label="Initiatives">
     <p>Découvrir nos parcours pratiques et nos actions de sensibilisation pour une Afrique numérique plus sûre.</p>
   </div>
+      <!-- Main content area -->
+      <main>
+        <!-- Mission section title -->
+        <h2 id="mission" class="section-title animate-on-scroll fade-in">Notre mission</h2>
+        
+        <!-- Mission section with three key pillars -->
+        <section class="mission" aria-label="Mission de CyberGuard 4 All">
+          <!-- First mission item: Cybersecurity training -->
+          <div class="item animate-on-scroll slide-left stagger-1">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2"
+              viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="48" width="48">
+              <path d="M12 2L2 7l10 5 10-5-10-5z" />
+              <path d="M2 17l10 5 10-5" />
+            </svg>
+            <h3>Formation en cybersécurité pour tous</h3>
+          </div>
+          
+          <!-- Second mission item: Digital security awareness -->
+          <div class="item animate-on-scroll slide-left stagger-2">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2"
+              viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="48" width="48">
+              <circle cx="12" cy="12" r="10" />
+              <path d="M2 12h20" />
+            </svg>
+            <h3>Sensibilisation à la sécurité numérique en Afrique</h3>
+          </div>
+          
+          <!-- Third mission item: SME and NGO support -->
+          <div class="item animate-on-scroll slide-left stagger-3">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2"
+              viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="48" width="48">
+              <circle cx="12" cy="12" r="10" />
+              <path d="M12 7v10" />
+              <path d="M7 12h10" />
+            </svg>
+            <h3>Accompagnement des PME et ONG locales</h3>
+          </div>
+        </section>
+        <!-- Featured programs section -->
+        <section id="programmes" class="programs" aria-label="Programmes phares">
+          <h2 class="animate-on-scroll fade-in">Nos programmes phares</h2>
+          <p class="lead animate-on-scroll fade-in">Des parcours concrets pour débuter, se professionnaliser et protéger son entourage.</p>
+          
+          <!-- Program cards grid -->
+          <div class="program-cards">
+            <!-- Cybersecurity initiation program -->
+            <div class="program-card animate-on-scroll scale-up stagger-1" tabindex="0" data-link="formations.html#initiation">
+              <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1200&q=60"
+                alt="Illustration cybersécurité initiation" />
+              <h3>Initiation à la cybersécurité</h3>
+              <span class="badge">Débutant</span>
+              <p class="meta">Bases, bonnes pratiques, hygiène numérique</p>
+            </div>
+            
+            <!-- OSINT and online monitoring program -->
+            <div class="program-card animate-on-scroll scale-up stagger-2" tabindex="0" data-link="formations.html#osint">
+              <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1200&q=60"
+                alt="Illustration OSINT veille en ligne" />
+              <h3>OSINT et veille en ligne</h3>
+              <span class="badge">Intermédiaire</span>
+              <p class="meta">Méthodes, outils, éthique</p>
+            </div>
+            
+            <!-- SOC Analyst Level 1 program -->
+            <div class="program-card animate-on-scroll scale-up stagger-3" tabindex="0" data-link="formations.html#soc1">
+              <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1200&q=60"
+                alt="Illustration analyste SOC" />
+              <h3>Analyste SOC Niveau 1</h3>
+              <span class="badge">Intermédiaire</span>
+              <p class="meta">Détection, triage, réponse</p>
+            </div>
+            
+            <!-- Social engineering and phishing prevention program -->
+            <div class="program-card animate-on-scroll scale-up stagger-4" tabindex="0" data-link="formations.html#social">
+              <img src="https://images.unsplash.com/photo-1549924231-f129b911e442?auto=format&fit=crop&w=1200&q=60"
+                alt="Illustration ingénierie sociale" />
+              <h3>Ingénierie sociale et prévention du phishing</h3>
+              <span class="badge">Tous niveaux</span>
+              <p class="meta">Psychologie, campagnes, défense</p>
+            </div>
+          </div>
+        </section>
 
-  <main>
-    <h2 id="mission" class="section-title">Notre mission</h2>
-    <section class="mission" aria-label="Mission de CyberGuard 4 All">
-      <div class="item">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"
-          stroke-linecap="round" stroke-linejoin="round" height="48" width="48">
-          <path d="M12 2L2 7l10 5 10-5-10-5z" />
-          <path d="M2 17l10 5 10-5" />
-        </svg>
-        <h3>Formation en cybersécurité pour tous</h3>
-      </div>
-      <div class="item">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"
-          stroke-linecap="round" stroke-linejoin="round" height="48" width="48">
-          <circle cx="12" cy="12" r="10" />
-          <path d="M2 12h20" />
-        </svg>
-        <h3>Sensibilisation à la sécurité numérique en Afrique</h3>
-      </div>
-      <div class="item">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"
-          stroke-linecap="round" stroke-linejoin="round" height="48" width="48">
-          <circle cx="12" cy="12" r="10" />
-          <path d="M12 7v10" />
-          <path d="M7 12h10" />
-        </svg>
-        <h3>Accompagnement des PME et ONG locales</h3>
-      </div>
-    </section>
 
-    <section id="programmes" class="programs" aria-label="Programmes phares">
-      <h2>Nos programmes phares</h2>
-      <p class="lead">Des parcours concrets pour débuter, se professionnaliser et protéger son entourage.</p>
-      <div class="program-cards">
-        <div class="program-card" tabindex="0" data-link="formations.html#initiation">
-          <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1200&q=60"
-            alt="Illustration cybersécurité initiation" />
-          <h3>Initiation à la cybersécurité</h3>
-          <span class="badge">Débutant</span>
-          <p class="meta">Bases, bonnes pratiques, hygiène numérique</p>
+        <!-- Impact statistics section -->
+        <section class="stats" aria-label="Impact de CyberGuard 4 All">
+          <div class="stat animate-on-scroll fade-in stagger-1">
+            <div class="number">1,2K+</div>
+            <div class="label">Jeunes sensibilisés</div>
+          </div>
+          <div class="stat animate-on-scroll fade-in stagger-2">
+            <div class="number">50+</div>
+            <div class="label">Ateliers & webinaires</div>
+          </div>
+          <div class="stat animate-on-scroll fade-in stagger-3">
+            <div class="number">30+</div>
+            <div class="label">PME & ONG accompagnées</div>
+          </div>
+          <div class="stat animate-on-scroll fade-in stagger-4">
+            <div class="number">4</div>
+            <div class="label">Parcours e-learning</div>
+          </div>
+        </section>
+
+        <!-- Newsletter subscription section -->
+        <section id="newsletter" class="newsletter animate-on-scroll slide-left" aria-label="Newsletter">
+          <h3>Restez informé</h3>
+          <p class="hint">Actualités cybersécurité, ressources gratuites et événements en Afrique.</p>
+          <form data-newsletter>
+            <input type="email" name="email" placeholder="Votre email" aria-label="Votre email" required />
+            <button class="btn" type="submit">S'inscrire</button>
+          </form>
+        </section>
+
+        <!-- Customer testimonial section -->
+        <section class="testimonials animate-on-scroll scale-up" aria-label="Témoignage">
+          <p>« La cybersécurité est un droit, pas un luxe. CyberGuard 4 All nous montre la voie vers un futur numérique
+            plus
+            sûr en Afrique. »</p>
+          <p>— Amina, étudiante en TIC, Nairobi</p>
+        </section>
+      </main>
+
+      <!-- Site footer with company information and links -->
+      <footer>
+        <div class="footer-content">
+          <!-- Company information and social media -->
+          <div class="footer-section">
+            <h3><span>Cyber</span>Guard 4 All</h3>
+            <p>Email : <a href="mailto:contact@cyberguard4all.com">contact@cyberguard4all.com</a></p>
+            <a href="#" class="social-icon" aria-label="Facebook"><i class="ri-facebook-circle-line"></i></a>
+            <a href="#" class="social-icon" aria-label="Twitter"><i class="ri-twitter-line"></i></a>
+            <a href="#" class="social-icon" aria-label="LinkedIn"><i class="ri-linkedin-box-line"></i></a>
+            <a href="#" class="social-icon" aria-label="Instagram"><i class="ri-instagram-line"></i></a>
+          </div>
+          
+          <!-- Useful links section -->
+          <div class="footer-section">
+            <h4>Liens utiles</h4>
+            <p>
+              <a href="index.html">Accueil</a><br />
+              <a href="about.html">À propos</a><br />
+              <a href="formations.html">Formations</a><br />
+              <a href="blog.html">Blog</a><br />
+              <a href="Mission.html">Mission</a><br />
+              <a href="Programmes.html">Programmes</a><br />
+              <a href="Newsletter.html">Newsletter</a><br />
+              <a href="EspaceMembres.html">Espace membres</a>
+            </p>
+          </div>
+          
+          <!-- Services section -->
+          <div class="footer-section">
+            <h4>Nos services</h4>
+            <a href="#">Sensibilisation</a><br />
+            <a href="#">Formations Certifiantes</a><br />
+            <a href="#">Audit & Accompagnement</a><br />
+            <a href="#">Reseaux et Systèmes Informatiques</a><br />
+          </div>
+          
+          <!-- Training programs section -->
+          <div class="footer-section">
+            <h4>Formations</h4>
+            <a href="#">Initiation à la cybersécurité</a><br />
+            <a href="#">OSINT et veille en ligne</a><br />
+            <a href="#">Analyse Soc Niveau 1</a><br />
+            <a href="#">Ingénierie sociale et prévention du phishing</a><br />
+          </div>
         </div>
-        <div class="program-card" tabindex="0" data-link="formations.html#osint">
-          <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1200&q=60"
-            alt="Illustration OSINT veille en ligne" />
-          <h3>OSINT et veille en ligne</h3>
-          <span class="badge">Intermédiaire</span>
-          <p class="meta">Méthodes, outils, éthique</p>
-        </div>
-        <div class="program-card" tabindex="0" data-link="formations.html#soc1">
-          <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1200&q=60"
-            alt="Illustration analyste SOC" />
-          <h3>Analyste SOC Niveau 1</h3>
-          <span class="badge">Intermédiaire</span>
-          <p class="meta">Détection, triage, réponse</p>
-        </div>
-        <div class="program-card" tabindex="0" data-link="formations.html#social">
-          <img src="https://images.unsplash.com/photo-1549924231-f129b911e442?auto=format&fit=crop&w=1200&q=60"
-            alt="Illustration ingénierie sociale" />
-          <h3>Ingénierie sociale et prévention du phishing</h3>
-          <span class="badge">Tous niveaux</span>
-          <p class="meta">Psychologie, campagnes, défense</p>
-        </div>
-      </div>
-    </section>
+      </footer>
 
-    <section class="stats" aria-label="Impact de CyberGuard 4 All">
-      <div class="stat">
-        <div class="number">1,2K+</div>
-        <div class="label">Jeunes sensibilisés</div>
-      </div>
-      <div class="stat">
-        <div class="number">50+</div>
-        <div class="label">Ateliers & webinaires</div>
-      </div>
-      <div class="stat">
-        <div class="number">30+</div>
-        <div class="label">PME & ONG accompagnées</div>
-      </div>
-      <div class="stat">
-        <div class="number">4</div>
-        <div class="label">Parcours e-learning</div>
-      </div>
-    </section>
-
-    <section id="newsletter" class="newsletter" aria-label="Newsletter">
-      <h3>Restez informé</h3>
-      <p class="hint">Actualités cybersécurité, ressources gratuites et événements en Afrique.</p>
-      <form data-newsletter>
-        <input type="email" name="email" placeholder="Votre email" aria-label="Votre email" required />
-        <button class="btn" type="submit">S'inscrire</button>
-      </form>
-    </section>
-
-    <section class="testimonials" aria-label="Témoignage">
-      <p>« La cybersécurité est un droit, pas un luxe. CyberGuard 4 All nous montre la voie vers un futur numérique plus
-        sûr en Afrique. »</p>
-      <p>— Amina, étudiante en TIC, Nairobi</p>
-    </section>
-  </main>
-
-  <footer>
-    <div class="footer-content">
-      <div class="footer-section">
-        <h4>Contact</h4>
-        <p>Email : <a href="mailto:contact@cyberguard4all.com">contact@cyberguard4all.com</a></p>
-      </div>
-      <div class="footer-section">
-        <h4>Suivez-nous</h4>
-        <p>
-          <a href="#" aria-label="Facebook">Facebook</a><br />
-          <a href="#" aria-label="Twitter">Twitter</a><br />
-          <a href="#" aria-label="LinkedIn">LinkedIn</a><br />
-          <a href="#" aria-label="WhatsApp">WhatsApp</a>
-        </p>
-      </div>
-    </div>
-  </footer>
-
-  <script src="assets/script.js"></script>
+      <!-- Main JavaScript file for site functionality -->
+      <script src="assets/script.js"></script>
 </body>
 
 </html>
